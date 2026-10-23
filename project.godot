@@ -1,0 +1,16 @@
+; Demo and test project for the Frame Trace add-on. Only addons/frame_trace is the add-on.
+config_version=5
+
+[application]
+
+config/name="Frame Trace demo"
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.3")
+
+[autoload]
+
+FrameTrace="*res://addons/frame_trace/frame_trace.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/frame_trace/plugin.cfg")
